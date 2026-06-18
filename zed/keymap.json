@@ -1,0 +1,18 @@
+// Zed keymap — JetBrains-style multiple cursors
+// base_keymap "JetBrains" already covers most; explicit so it survives changes.
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      // add caret on next occurrence of word under selection
+      "ctrl-g": "editor::SelectNext",
+      // step back: drop last added occurrence
+      "ctrl-shift-g": "editor::SelectPrevious",
+      // select all occurrences at once
+      "ctrl-cmd-g": "editor::SelectAllMatches",
+      // add caret above / below
+      "ctrl-alt-up": "editor::AddSelectionAbove",
+      "ctrl-alt-down": "editor::AddSelectionBelow"
+    }
+  }
+]
