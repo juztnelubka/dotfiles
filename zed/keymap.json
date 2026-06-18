@@ -25,5 +25,13 @@
       // cmd-p = current file symbol outline (classes, functions, etc.)
       "cmd-p": "outline::Toggle"
     }
+  },
+  {
+    // file tree: copy paths (overrides default cmd-c = copy entry for paste)
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-shift-c": "workspace::CopyPath",
+      "cmd-c": "workspace::CopyRelativePath"
+    }
   }
 ]
