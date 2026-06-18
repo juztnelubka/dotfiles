@@ -1,6 +1,10 @@
 // Zed keymap — JetBrains-style multiple cursors
 // base_keymap "JetBrains" already covers most; explicit so it survives changes.
 [
+  // MOUSE multi-cursor (hardcoded in Zed, NOT bindable here):
+  //   option + click        -> add single caret
+  //   option + shift + drag -> column select, caret per line
+  //   (bare shift/option drag = normal selection; can't be remapped)
   {
     "context": "Editor",
     "bindings": {
