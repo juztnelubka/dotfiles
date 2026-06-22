@@ -50,4 +50,8 @@
     "light": "Ayu Light",
     "dark": "Vesper",
   },
+  // auto-install on any synced machine
+  "auto_install_extensions": {
+    "vesper": true
+  },
 }
