@@ -52,11 +52,26 @@
   },
   // auto-install on any synced machine
   "auto_install_extensions": {
-    "vesper": true
+    "vesper": true,
+    "basedpyright": true
   },
   // hide from project panel + search
   "file_scan_exclusions": [
     "**/__pycache__",
     "**/*.pyc"
   ],
+  // python type checker; venv/interpreter auto-detected per project
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "basedpyright": {
+          "analysis": {
+            "typeCheckingMode": "standard",
+            "diagnosticMode": "openFilesOnly",
+            "useLibraryCodeForTypes": true
+          }
+        }
+      }
+    }
+  },
 }
