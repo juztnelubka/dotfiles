@@ -8,7 +8,9 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
+    // M/A/D/U letter badges next to changed files (folders still tint)
+    "git_status_indicator": true
   },
   "outline_panel": {
     "dock": "left"
