@@ -13,25 +13,19 @@
       // step back: drop last added occurrence
       "ctrl-shift-g": "editor::SelectPrevious",
       // select all occurrences at once
+      "cmd-shift-p": "outline::Toggle",
       "ctrl-cmd-g": "editor::SelectAllMatches",
       // add caret above / below
       "ctrl-alt-up": "editor::AddSelectionAbove",
-      "ctrl-alt-down": "editor::AddSelectionBelow"
-    }
-  },
-  {
-    // global (no context) so it overrides the base cmd-p = command palette
-    "bindings": {
-      // cmd-p = current file symbol outline (classes, functions, etc.)
-      "cmd-p": "outline::Toggle"
-    }
+      "ctrl-alt-down": "editor::AddSelectionBelow",
+    },
   },
   {
     // file tree: copy paths (overrides default cmd-c = copy entry for paste)
     "context": "ProjectPanel",
     "bindings": {
       "cmd-shift-c": "workspace::CopyPath",
-      "cmd-c": "workspace::CopyRelativePath"
-    }
-  }
+      "cmd-c": "workspace::CopyRelativePath",
+    },
+  },
 ]
