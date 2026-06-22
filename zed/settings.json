@@ -54,4 +54,9 @@
   "auto_install_extensions": {
     "vesper": true
   },
+  // hide from project panel + search
+  "file_scan_exclusions": [
+    "**/__pycache__",
+    "**/*.pyc"
+  ],
 }
