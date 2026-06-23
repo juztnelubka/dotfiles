@@ -10,35 +10,35 @@
   "project_panel": {
     "dock": "left",
     // M/A/D/U letter badges next to changed files (folders still tint)
-    "git_status_indicator": true
+    "git_status_indicator": true,
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent": {
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "terminal": {
     "shell": {
-      "program": "fish"
-    }
+      "program": "fish",
+    },
   },
   "icon_theme": {
     "mode": "light",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)"
+    "dark": "Zed (Default)",
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "base_keymap": "JetBrains",
   // option-click / option-drag = add cursors / column select
@@ -55,12 +55,16 @@
   // auto-install on any synced machine
   "auto_install_extensions": {
     "vesper": true,
-    "basedpyright": true
+    "basedpyright": true,
   },
   // hide from project panel + search
   "file_scan_exclusions": [
     "**/__pycache__",
-    "**/*.pyc"
+    "**/*.pyc",
+    "**/.idea",
+    "**/.svelte-kit",
+    "**/node_modules",
+    "**/.DS_Store",
   ],
   // python type checker; venv/interpreter auto-detected per project
   "lsp": {
@@ -70,10 +74,10 @@
           "analysis": {
             "typeCheckingMode": "standard",
             "diagnosticMode": "openFilesOnly",
-            "useLibraryCodeForTypes": true
-          }
-        }
-      }
-    }
+            "useLibraryCodeForTypes": true,
+          },
+        },
+      },
+    },
   },
 }
