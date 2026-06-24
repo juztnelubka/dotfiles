@@ -26,9 +26,10 @@
   "git_panel": {
     "dock": "left",
   },
-  "terminal": {
-    "shell": {
-      "program": "fish",
+  "git": {
+    // no inline blame at end of line
+    "inline_blame": {
+      "enabled": false,
     },
   },
   "icon_theme": {
