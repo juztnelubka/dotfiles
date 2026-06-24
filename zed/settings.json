@@ -56,6 +56,7 @@
   "auto_install_extensions": {
     "vesper": true,
     "basedpyright": true,
+    "islands-theme": true,
   },
   // hide from project panel + search
   "file_scan_exclusions": [
