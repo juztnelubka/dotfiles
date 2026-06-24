@@ -1,6 +1,22 @@
 // Zed keymap — JetBrains-style multiple cursors
 // base_keymap "JetBrains" already covers most; explicit so it survives changes.
 [
+  {
+    // global panel toggles (left dock set in settings.json)
+    "bindings": {
+      "cmd-1": "project_panel::ToggleFocus", // file tree open/close
+      "cmd-0": "git_panel::ToggleFocus", // git panel open/close
+      // disable default cmd-2..9 (activate pane/tab N)
+      "cmd-2": null,
+      "cmd-3": null,
+      "cmd-4": null,
+      "cmd-5": null,
+      "cmd-6": null,
+      "cmd-7": null,
+      "cmd-8": null,
+      "cmd-9": null,
+    },
+  },
   // MOUSE multi-cursor (hardcoded in Zed, NOT bindable here):
   //   option + click        -> add single caret
   //   option + shift + drag -> column select, caret per line
@@ -18,6 +34,8 @@
       // add caret above / below
       "ctrl-alt-up": "editor::AddSelectionAbove",
       "ctrl-alt-down": "editor::AddSelectionBelow",
+      // copy full path of current file
+      "cmd-shift-c": "workspace::CopyPath",
     },
   },
   {
