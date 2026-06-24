@@ -82,4 +82,10 @@
       },
     },
   },
+  // no ruff auto-edits on save (still shows diagnostics)
+  "languages": {
+    "Python": {
+      "format_on_save": "off",
+    },
+  },
 }
