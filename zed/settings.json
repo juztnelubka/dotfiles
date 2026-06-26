@@ -66,6 +66,7 @@
   "file_scan_exclusions": [
     "**/__pycache__",
     "**/.ruff_cache",
+    "**/.pytest_cache",
     "**/*.pyc",
     "**/.idea",
     "**/.svelte-kit",
