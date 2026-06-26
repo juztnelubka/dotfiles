@@ -65,6 +65,7 @@
   // hide from project panel + search
   "file_scan_exclusions": [
     "**/__pycache__",
+    "**/.ruff_cache",
     "**/*.pyc",
     "**/.idea",
     "**/.svelte-kit",
