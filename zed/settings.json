@@ -60,7 +60,6 @@
   // auto-install on any synced machine
   "auto_install_extensions": {
     "vesper": true,
-    "basedpyright": true,
     "islands-theme": true,
   },
   // hide from project panel + search
@@ -72,11 +71,12 @@
     "**/node_modules",
     "**/.DS_Store",
   ],
-  // python type checker; venv/interpreter auto-detected per project
+  // python type checker (pyright, built into Zed); venv/interpreter auto-detected per project
+  // pyright has no reportUnknown* family -> no "partially unknown" noise
   "lsp": {
-    "basedpyright": {
+    "pyright": {
       "settings": {
-        "basedpyright": {
+        "python": {
           "analysis": {
             "typeCheckingMode": "standard",
             "diagnosticMode": "openFilesOnly",
@@ -90,6 +90,7 @@
   "languages": {
     "Python": {
       "format_on_save": "off",
+      "language_servers": ["pyright", "!basedpyright"],
     },
   },
 }
