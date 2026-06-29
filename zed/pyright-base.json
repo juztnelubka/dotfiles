@@ -1,0 +1,17 @@
+{
+  "//": "Shared basedpyright base. Per-repo pyrightconfig.json does { \"extends\": \"<path-to-this>\", \"venv\": \".venv\" }.",
+  "//2": "Rules are top-level here (config-file form), NOT under diagnosticSeverityOverrides.",
+  "typeCheckingMode": "standard",
+  "useLibraryCodeForTypes": true,
+
+  "reportUnknownArgumentType": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownParameterType": "none",
+  "reportUnknownLambdaType": "none",
+  "reportMissingParameterType": "none",
+  "reportAny": "none",
+  "reportExplicitAny": "none",
+  "reportUnusedCallResult": "none",
+  "reportImplicitOverride": "none"
+}
