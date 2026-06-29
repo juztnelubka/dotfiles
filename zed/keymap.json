@@ -36,6 +36,8 @@
       "ctrl-alt-down": "editor::AddSelectionBelow",
       // copy full path of current file
       "cmd-shift-c": "workspace::CopyPath",
+      // JetBrains intention actions: quick-fix / add import / etc
+      "alt-enter": "editor::ToggleCodeActions",
     },
   },
   {
