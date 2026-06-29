@@ -61,6 +61,7 @@
   "auto_install_extensions": {
     "vesper": true,
     "islands-theme": true,
+    "basedpyright": true,
   },
   // hide from project panel + search
   "file_scan_exclusions": [
@@ -73,16 +74,29 @@
     "**/node_modules",
     "**/.DS_Store",
   ],
-  // python type checker (pyright, built into Zed); venv/interpreter auto-detected per project
-  // pyright has no reportUnknown* family -> no "partially unknown" noise
+  // python type checker (basedpyright extension); venv/interpreter auto-detected per project
+  // configured to behave like plain pyright: basedpyright-only strict rules muted
   "lsp": {
-    "pyright": {
+    "basedpyright": {
       "settings": {
-        "python": {
+        "basedpyright": {
           "analysis": {
             "typeCheckingMode": "standard",
             "diagnosticMode": "openFilesOnly",
             "useLibraryCodeForTypes": true,
+            // mute basedpyright extras pyright doesn't have (kills "partially unknown" noise)
+            "diagnosticSeverityOverrides": {
+              "reportUnknownArgumentType": "none",
+              "reportUnknownMemberType": "none",
+              "reportUnknownVariableType": "none",
+              "reportUnknownParameterType": "none",
+              "reportUnknownLambdaType": "none",
+              "reportMissingParameterType": "none",
+              "reportAny": "none",
+              "reportExplicitAny": "none",
+              "reportUnusedCallResult": "none",
+              "reportImplicitOverride": "none",
+            },
           },
         },
       },
@@ -92,7 +106,7 @@
   "languages": {
     "Python": {
       "format_on_save": "off",
-      "language_servers": ["pyright", "!basedpyright"],
+      "language_servers": ["basedpyright", "!pyright"],
     },
   },
 }
