@@ -46,16 +46,6 @@
     "bindings": {
       "cmd-shift-c": "workspace::CopyPath",
       "cmd-c": "workspace::CopyRelativePath",
-      // JetBrains-style: open selected file into right-hand split (one key).
-      // no native panel-split action -> chain: open, then split right.
-      "shift-enter": ["workspace::SendKeystrokes", "enter ctrl-alt-l"],
-    },
-  },
-  {
-    "context": "Pane",
-    "bindings": {
-      // helper for shift-enter chain above; also usable standalone
-      "ctrl-alt-l": "pane::SplitRight",
     },
   },
 ]
