@@ -52,11 +52,6 @@
   "buffer_font_features": {
     "calt": false,
   },
-  // autocomplete: LSP only, no words-from-buffer noise
-  "completions": {
-    "words": "off",
-    "lsp": true,
-  },
   "theme": {
     "mode": "dark",
     "light": "Ayu Light",
