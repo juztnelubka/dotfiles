@@ -84,6 +84,8 @@
             "typeCheckingMode": "standard",
             "diagnosticMode": "openFilesOnly",
             "useLibraryCodeForTypes": true,
+            // no flood of import-candidates in autocomplete; import via alt-enter
+            "autoImportCompletions": false,
             // mute basedpyright extras pyright doesn't have (kills "partially unknown" noise)
             "diagnosticSeverityOverrides": {
               "reportUnknownArgumentType": "none",
